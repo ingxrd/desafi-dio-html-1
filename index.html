@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>Módulo 1 - Primeiros Passos com HTML</title>
+    <h1 style="background-color:SlateBlue; color:rgb(238, 238, 238);">Primeiros Passos com HTML</h1>
+    <hr />
+<h2>Índice</h2>
+<ol>
+    <li><a href="#historia">Mas antes, um pouco de história.</a></li>
+    <li><a href="#clientes">O que são <i>Servers</i> e <i>Clients</i>?</a></li>
+    <li><a href="#html"> Mão na massa: compreendendo a <strong>estrutura</strong> básica do HTML</a></li>
+    <li><a href="#hospedagem">Colocando seu site para jogo: o que é hospedagem?</a></li>
+    <li><a href="#referencias">Referências</a></li>
+</ol>
+
+<h2 id="historia"><a href="#historia">Mas antes, um pouco de história.</a></h2>
+<img src="https://www.fne.org.br/upload/Eniac_mulheres.jpeg" width="500" height="300"> 
+<figcaption><i>As mulheres foram essenciais na história da computação. Aprenda mais sobre <a href ="https://www.dio.me/articles/dia-9-homenagem-a-incrivel-grace" target="_blank">Grace Murray Hoppe</a>, programadora estadunidense pioneira no desenvolvimento de linguagens de código. </i></figcaption>
+ <p>Compreender a história dos computadores permite observar o avanço e desenvolvimento da tecnologia, bem como a perceber que nós, seres humanos, 
+    sempre buscamos uma ajudinha das máquinas para resolver os nossos problemas. 
+    Por essa razão, antes de entrarmos na tela do VS Code e digitarmos nossas primeiras tags, te pergunto: qual a primeira imagem que 
+    lhe vem a cabeça quando dizemos <i>computador</i>? Uma tela preta, cheia de zeros e uns? Talvez o mouse, teclado, cpu, ou os sistemas 
+    operacionais como o Windows? Mas é fato que dificilmente relacionamos a ideia de computador com algo <strong>simples</strong>
+    e distante da nossa época.</p>
+    <p>Entretanto, tudo tem um início. E no caso dos computadores, esse início remonta datas <strong><i>a.C!</i></strong>.
+    O ábaco, por exemplo, ainda que manual e simples, foi criado com o objetivo de <i>processar informações e realizar cálculos</i> (isso não te lembra algo?).
+Isso ilustra muito bem que, para chegarmos no dia de hoje, onde linhas de código conseguem executar comandos, andamos um caminho gigantesco e por termos
+muita história nessa longa tragetória, faremos um recorte histórico. </p>
+<p>O século XX foi conhecido pelos seus conflitos: duas guerras mundiais ocorreram em um curto períogo de tempo e os anos que se seguiram foram marcados pela Guerra Fria
+    e contendas regionais. É nesse contexto histórico que a tecnologia encontrou terreno fértil para se desenvolver, devido a necessidade de inovações que impulsionassem os esforços
+     de guerra e a competição entre as potências. Em 1946, a Alemanha desenvolveu o computador <strong>COLOSSUS</strong> para cálculos de guerra e decifração de mensagens alemãs codificadas. No mesmo ano, 
+     os Estados Unidos introduziram o <strong>ENIAC</strong>, projetado par cálculos balísticos e científicos.</p>
+      <p>É interessante pensar que esses computadores pesavam toneladas e hoje podemos carregá-los em nossas mãos. Com o passar dos anos, fomos introduzindo inovações, como o circuito integrado
+        com transitores, capacitadores e resistores, que permitiu a redução de tamanho e peso dos computadores. Ao largo do tempo, os computadores deixaram de ser exclusividade dos militares e a introdução dos <i>personal computers</i> nos anos 70 (PCs)
+            popularizou de vez o seu uso.
+        </i></p>
+     <p>Ao passo em que os computadores se desenvolviam, a internet também era concebida e evoluía. Nos anos 1960, o projeto ARPANET, financiado pelo Departamento de Defesa dos Estados Unidos, foi o embrião da internet moderna. Seu objetivo inicial era 
+        criar uma <mark>rede de comunicação</mark> robusta e descentralizada, capaz de sobreviver a possíveis ataques durante a Guerra Fria. Com o tempo, essa rede se expandiu, conectando universidades e centros de pesquisa, e posteriormente se tornou a base da internet que conhecemos hoje. </p>
+        
+<P> Você deve ter percebido o quanto evoluimos desde o século passado e a velocidade com a qual concebemos novas ideias. Portanto, vamos deixar um pouco a história de lado e vamos focar em compreender uma parcela desse vasto mundo da computação. </P>  
+
+<h2 id="clientes"><a href="#clientes">O que são <i>Clients</i> e </i>Servers?</i></a></h2>
+
+<p>Clients e Servers, ou no bom português, Clientes e Servidores são duas partes fundamentais do funcionamento da comunicação entre computadores. Vamos observar o esquema abaixo para nos ajudar a compreender a função de cada um.</p>
+<img src="https://res.cloudinary.com/lwgatsby/f_auto/www/uploads/2023/05/client-server-network.jpg" width="500" height="300"> 
+<p>Como discutimos anteriormente, a internet é uma rede de comunicação fundamental. É crucial compreender os participantes desse diálogo digital. Quem se comunica com quem? Os dispositivos que acessam conteúdo na internet são denominados Clientes. Em suma, são você, eu, qualquer pessoa que se 
+    conecta à internet usando seu dispositivo preferido, seja notebook, celular, tablet, entre outros. Utilizamos navegadores como Chrome, Internet Explorer, Firefox, entre outros, para acessar o conteúdo disponível na web. Quando digitamos algo e pressionamos 'enter', a internet interage com o Servidor, isto é, o servidor, que nos fornece as informações solicitadas, caso as tenha armazenado. </p>
+    <ul>
+    <li><strong>Servidores Web</strong>: Responsáveis por hospedar sites e páginas da web. O Apache e o Nginx são exemplos de servidores web populares.</li>
+    <li> <strong>Servidores de Banco de Dados</strong>: Responsáveis por armazenar e gerenciar dados. Exemplos incluem MySQL, PostgreSQL, MongoDB, entre outros.</li>
+   <li> <strong>Servidores de Arquivos</strong>: Utilizados para armazenamento e compartilhamento de arquivos em rede.</li>
+   <li><strong>Servidores de Aplicativos</strong>: Usados para executar aplicativos e serviços. O servidor de aplicativos Java EE (Enterprise Edition) é um exemplo.</li>
+     <li><strong>Servidores de E-mail</strong>: Gerenciam o envio, recebimento e armazenamento de e-mails. Exemplos incluem o Exchange Server da Microsoft e o Postfix.</li>
+    </ul>
+<h2 id="html"><a href="#html">Mão na massa: compreendendo a estrutura básica do HTML</a></h2>
+<p>Antes de iniciar a prática do HTML, será necessário um ambiente de desenvolvimento. Recomendamos o uso do VS Code, para baixar clique <a href="https://code.visualstudio.com/" target="_blank">aqui</a>. </p>
+<p>Agora podemos falar sobre a <mark>estrutura básica do HTML</mark>, que é composta por três elementos:</p>
+<ol>
+    <li>< html> </ html>: responsável por definir que nossa página é um HTML.</li>
+    <li>< head> </ head>: que são as informações carregadas antes do usuário ver, como o título de uma página, localizado na aba.</li>
+    <li>< body> </ body>: tudo que o usuário vê está entre as tags body. </body></li>
+</ol>
+<p>Perceba que todas essas tags possuem fechamento, representado pelo <mark>/</mark>. Entretanto, algumas tags não precisam de fechamento, elas são vazias, como < / input type"text/">. Observe que ele fecha em si mesmo.</p>
+<p>Além disso, também temos os <mark>atributos</mark> de tags, isto é, as <strog>propriedades</strog> associadas à elas.</p> Alguns exemplos de atributos são:
+<ul>
+    <li><strong>id</strong>:identificador para mudanças no Javascript.</li>
+    <li><strong>style</strong>: Identificador para mudanças no CSS.</li>
+    <li><strong>class</strong>: No CSS, podemos aplicar estilo a todos os elementos selecionados. Por exemplo: < class = "titulo-principal">. Dessa forma, todo títuli principal terá a mesma característica.</li>
+</ul>
+<P>Agora que sabemos qual a estrutura do HTML, vamos aprender algumas tags úteis para fazer nosso primeiro site. </P>
+<ul>
+    <li>< h1> - < h6>: Define títulos ou cabeçalhos, onde < h1> é o mais importante e < h6> o menos importante.</li>
+    <li>< p>: Define parágrafos de texto.</li>
+    <li>< a>: Cria links para outras páginas ou recursos.</li>
+    <li>< img>: Insere imagens na página.</li>
+    <li>< ul>, < ol>, < li>: Criam listas não ordenadas (< ul>) e ordenadas (< ol>), com elementos de lista (< li>).</li>
+</ul>
+<h2 id="hospedagem"><a href="#hospedagem">Colocando seu site para jogo: o que é hospedagem?</h2></a>
+    <p>Agora que você sabe como usar tags em HTML, que tal publicar seu primeiro site? Para isso, precisamos hospedá-lo.</p>
+    <p><strong>Hospedar</strong> um site significa, basicamente, alugar um servidor fornecido por uma empresa para armazenar os dados do nosso site. Isso permite que as pessoas acessem todo o conteúdo que criamos.</p>
+
+    <h2 id="referencias"><a href="#referencias">Referências</a></h2>
+    <ul>
+        <list><a href="https://www.w3schools.com/html/default.asp" target="_blank">W3 Schools</a></list>
+        </ul>
+</head>
+<body>
+    
+</body>
+</html>
